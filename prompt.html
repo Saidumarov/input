@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            margin: 40vh 0 0 80vh;
+            width: 250px;
+            height: 40px;
+            border-radius: 50px;
+            border: none;
+            font-size: 15px;
+            background-color: #4141f6;
+            color: white;
+
+
+        }
+
+        button:hover {
+            background-color: rgb(144, 217, 71);
+            color: #4141f6;
+            cursor: pointer;
+        }
+        h3{
+            margin: 4vh 0 0 70vh;  
+        }
+    </style>
+</head>
+
+<body>
+   <div class="but">
+    <button onclick="res()">So'z kiritish uchun bosing</button>
+    <br><br>
+    <h3>So'z kiritsa to'gri deydi son kiritsa noto'g'ri diydi</h3>
+   </div>
+
+
+    <script>
+        function res() {
+            let res = Number(prompt("Ismingizni kiriting"));
+
+            if (res) {
+                return alert("Noto'g'ri")
+            }
+
+            else if (String(res)) {
+                return alert("To'g'ri");
+            }
+
+               }
+
+    </script>
+</body>
+
+</html>
